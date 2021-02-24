@@ -24,7 +24,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-          repository: karthikeyans01/digital-ocean-demo
+          repository: saiseyon/dev-repo
           tag_with_ref: true
           tag_with_sha: true
         
