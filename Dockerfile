@@ -4,5 +4,5 @@ RUN pwd
 RUN cd 
 RUN ls -lrt
 RUN ls -lrt /home/runner/work/digital-ocean-demo/digital-ocean-demo/
-COPY /home/runner/work/digital-ocean-demo/digital-ocean-demo/target/app.jar app.jar
+ADD /home/runner/work/digital-ocean-demo/digital-ocean-demo/target/app.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
