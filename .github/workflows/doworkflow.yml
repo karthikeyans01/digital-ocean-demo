@@ -20,7 +20,7 @@ jobs:
         run: mvn --batch-mode --update-snapshots verify
         
       - name: Login to DockerHub
-        run: echo ${{ sectets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB }} -- password-stdin
+        run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB }} -- password-stdin
         
           
       - name: Build and push Docker images
