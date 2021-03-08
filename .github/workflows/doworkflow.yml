@@ -16,6 +16,11 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
+      - shell: cmd
+        env:
+         SUPER_SECRET: ${{ secrets.DOCKERHUB_PASSWORD }}
+        run: |
+          example-command "%SUPER_SECRET%"
           
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
