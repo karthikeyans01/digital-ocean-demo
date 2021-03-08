@@ -35,7 +35,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: saiseyon/app:latest
+          tags: saiseyon/dev-repo:latest
         
   deploy:
     needs: build
