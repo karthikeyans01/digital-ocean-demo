@@ -19,7 +19,7 @@ jobs:
       - shell: bash
         env:
          SUPER_SECRET: ${{ secrets.DOCKERHUB_PASSWORD }}
-        run: echo "$SUPER_SECRET"
+        run: echo $SUPER_SECRET
           
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
