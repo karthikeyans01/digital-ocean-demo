@@ -23,9 +23,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
           repository: saiseyon/dev-repo
-          tags: latest          
-          tag_with_ref: true
-          tag_with_sha: true
+          tags: digital/ocean:latest
+          push: true
         
   deploy:
     needs: build
